@@ -33,7 +33,7 @@ class Scraper
   def self.scrape_profile_page(profile_url)
     #takes one url at a time
 
-    doc = Nokogiri::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/students/joe-burgess.html"))
+    doc = Nokogiri::HTML(open(profile_url))
     #doc.css(".vitals-container .social-icon-container a")[0].attribute("href").value
     #how to sort which website is a bit difficult. cuz its not labeled. the number of link varies person to person
 
