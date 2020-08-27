@@ -25,6 +25,7 @@ class Student
     attributes_hash.each do | key, value |
       self.send( "#{key}=", value)
     end # end iteration
+    self
   end
 
   def self.all
