@@ -16,7 +16,7 @@ class Student
     # it will iterate over the array, simply feed the hash as argument to the initialize method to create a new Student instance,
     students_array.each do | studenthash |
       self.new(studenthash)
-    end #end iteration 
+    end #end iteration
 
   end
 
