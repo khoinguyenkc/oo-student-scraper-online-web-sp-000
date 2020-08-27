@@ -36,7 +36,7 @@ class Scraper
     doc = Nokogiri::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/students/joe-burgess.html"))
     #doc.css(".vitals-container .social-icon-container a")[0].attribute("href").value
     #how to sort which website is a bit difficult. cuz its not labeled. the number of link varies person to person
-    
+
     #doc.css(".bio-content .description-holder p").text
 
     #doc.css(".profile-quote").text
@@ -44,7 +44,7 @@ class Scraper
       :bio => doc.css(".bio-content .description-holder p").text,
       :profile_quote => doc.css(".profile-quote").text
     }
-    
+
     linksnodeset = doc.css(".vitals-container .social-icon-container a")
     linksnodeset.each do | link |
 
@@ -58,11 +58,9 @@ class Scraper
         personhash[:blog] = link.attribute("href").value
       end #end if else
 
-      
-      
+
+
     end #end iteration
     myhash
     binding.pry
   end
-
-end
