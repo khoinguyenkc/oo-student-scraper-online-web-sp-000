@@ -8,7 +8,12 @@ class Student
     
   end
 
-  def self.create_from_collection(students_array)
+  def self.create_from_collection(students_array) #CLASS method
+    #This class method should take in an array of hashes, each hash is a student
+    # it will iterate over the array, simply feed the hash as argument to the initialize method to create a new Student instance,
+    students_array.each do | studenthash |
+      self.new(studenthash)
+    end #end iteration 
     
   end
 
