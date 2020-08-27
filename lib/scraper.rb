@@ -21,7 +21,7 @@ class Scraper
     # doc.css(".student-card")[0].css("a .card-text-container .student-location").text
     arrayofhashes = []
     xmlnodeset.each do | student |
-      [] << {
+      arrayofhashes << {
         :name => student.css("a").attribute("href").value,
         :location => student.css("a").attribute("href").value,
         :profile_url => student.css("a").attribute("href").value
