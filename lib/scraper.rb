@@ -13,7 +13,7 @@ class Scraper
     #inside that we want <h4 class="student-name"
     #and <p class student-location
     doc.css(".student-card") #this should give me an "nodeset" of all those student card items
-    
+
   end
 
   def self.scrape_profile_page(profile_url)
