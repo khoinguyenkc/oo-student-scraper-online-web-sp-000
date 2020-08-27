@@ -5,7 +5,10 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-
+    #using metaprogramming. aka the send method
+    student_hash.each do | key, value |
+      self.send( "#{key}=", value)
+    end # end iteration
   end
 
   def self.create_from_collection(students_array) #CLASS method
