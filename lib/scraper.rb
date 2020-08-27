@@ -62,7 +62,6 @@ class Scraper
 
     end #end iteration
     personhash
-    binding.pry
   end
 
 end
