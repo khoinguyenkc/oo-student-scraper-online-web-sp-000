@@ -31,7 +31,11 @@ class Scraper
   end #end method
 
   def self.scrape_profile_page(profile_url)
-
+    #takes one url at a time
+    
+    doc = Nokogiri::HTML(open("https://learn-co-curriculum.github.io/student-scraper-test-page/students/joe-burgess.html"))
+    #doc.css(".vitals-container .social-icon-container .a").attribute("href").value
+    binding.pry
   end
 
 end
