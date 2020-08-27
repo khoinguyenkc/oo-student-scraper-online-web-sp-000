@@ -27,7 +27,7 @@ class Scraper
         :profile_url => student.css("a").attribute("href").value
       }
     end #end iteration
-
+    arrayofhashes
   end #end method
 
   def self.scrape_profile_page(profile_url)
