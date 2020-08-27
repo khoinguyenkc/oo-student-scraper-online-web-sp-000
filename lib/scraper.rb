@@ -64,3 +64,5 @@ class Scraper
     myhash
     binding.pry
   end
+
+end
